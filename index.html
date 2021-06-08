@@ -32,7 +32,25 @@
   <a href="#"><img src="https://images.photowall.com/products/51310/seattle-skyline-black.jpg?h=699&q=85" alt="Seattle skyline"></a>
   <!--the form begins here-->
   <form>
-    <
+    <p>How do you like your guacamole?</p>
+    <label for="fresh">
+      <input id="fresh" type="radio" value="fresh" name="fresh-or-not" checked>Fresh
+    </label>
+    <label for="not-fresh">
+      <input id="not-fresh" type="radio" value="in enchiladas" name="fresh-or-not">In enchiladas
+    </label><br>
+    <p>What's your favorite types of Mexican food?</p>
+    <label for="burritos">
+      <input id="burritos" type="checkbox" value="burritos" name="favmex">Burritos
+    </label>
+    <label for="enchiladas">
+      <input id="enchiladas" type="checkbox" value="enchiladas" name="favmex">Enchiladas
+    </label>
+    <label for="quesadilla">
+      <input id="quesadilla" type="checkbox" value="quesadilla" name="favmex">Quesadillas
+    </label><br>
+    <input id="fav-enchiladas" type="text" placeholder="Favorite type of enchiladas?">
+    <button type="submit">Submit (actually does nothing)</button>
   </form>
  
 
