@@ -11,11 +11,26 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab&display=swap" rel="stylesheet">
   
   <style>
+    /*The following code defines the values of variable colors throughout the page.*/
+    :root {
+      --primary-color: purple;
+      --primary-contrast-color: white; /*this should be a neutral color that contrasts with the "--primary-color". If the primary color is dark, this should be white; if the primary color is light, this should be black.*/
+      --secondary-color: plum;
+      --secondary-contrast-color: black;
+      --third-color: PaleTurquoise;
+      --third-contrast-color: black;
+      --fourth-color: lavender;
+      --fourth-contrast-color: black;
+    } /*To include these colors in other CSS, instead of a color name or hex code, write "var(--primary-color)", without quotes. Include the name of the variable color you want. Example: "color: var(--primary-color);" */
+    /*For a listing of all recognized CSS colors, visit this link: https://www.w3schools.com/cssref/css_colors.asp // For an explanation of variable colors, go here: https://www.geeksforgeeks.org/how-to-define-colors-as-variables-in-css/ */
+    
+    /*The rest of the style code is general CSS that styles the page.*/
+    
     p, ol, ul {
       font-family: Roboto, sans-serif;
     }
     h1, h2, h3, h4, h5, h6 {
-      color: purple;
+      color: var(--primary-color);
       font-family: "Roboto Slab", serif;
     }
     img {
@@ -23,12 +38,12 @@
       width: 500px;
     }
     ::-moz-selection { /* Code for Firefox */
-      color: white;
-      background: purple;
+      color: var(--primary-contrast-color);
+      background: var(--primary-color);
     }
     ::selection {
-      color: white;
-      background: purple;
+      color: var(--primary-contrast-color);
+      background: var(--primary-color);
     }
   </style>
     
