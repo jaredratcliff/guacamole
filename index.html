@@ -1,67 +1,75 @@
 <!DOCTYPE html>
 
 <html>
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-  <title>Guacamole - Home</title>
-  <LINK href="styles.css" rel="stylesheet" type="text/css">
-</head>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Guacamole - Home</title>
+    <LINK href="styles.css" rel="stylesheet" type="text/css">
+  </head>
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab&display=swap" rel="stylesheet">
   
-<style>
-  * {
-    font-family: monospace;
-  }
-  h1, h2, h3, h4, h5, h6 {
-    color: purple;
-  }
-</style>
+  <style>
+    p {
+      font-family: Roboto, sans-serif;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      color: purple;
+      font-family: "Roboto Slab", serif;
+    }
+    img {
+      filter: invert(100%);
+    }
+  </style>
+    
 
-<body>
+  <body>
 
-  <h1>Hello world!!</h1>
-  <p>This little site may not look like much, but it'll soon be spilling over with guacamole love.</p>
-  <h2>Made in Cambodia with ❤ from all of us at <a href=https://www.jaredratcliff.com target="_blank">jaredratcliff.com</a></h2><br>
-  <ol>
-    <li>avocado</li>
-    <li>salt</li>
-    <li>maybe some tomato</li>
-    <li>lemon juice</li>
-  </ol>
-  <p>That's what you should put in guacamole if you want to make some. How do you eat it?</p>
-  <ul>
-    <li>fresh</li>
-    <li>on haystacks</li>
-    <li>fresh</li>
-    <li>with enchiladas</li>
-    <li>or fresh</li>
-    <li>or with tortilla chips</li>
-    <li>or maybe even fresh</li>
-  </ul>
-  <p>Please contribute your <em>extremely important</em> thoughts and feelings by filling out the form below. But first, have a look at this picture.</p>
-  <a href="#"><img src="https://images.photowall.com/products/51310/seattle-skyline-black.jpg?h=699&q=85" alt="Seattle skyline"></a>
-  <!--the form begins here-->
-  <form>
-    <p>How do you like your guacamole?</p>
-    <label for="fresh">
-      <input id="fresh" type="radio" value="fresh" name="fresh-or-not" checked>Fresh
-    </label>
-    <label for="not-fresh">
-      <input id="not-fresh" type="radio" value="in enchiladas" name="fresh-or-not">In enchiladas
-    </label><br>
-    <p>What's your favorite types of Mexican food?</p>
-    <label for="burritos">
-      <input id="burritos" type="checkbox" value="burritos" name="favmex">Burritos
-    </label>
-    <label for="enchiladas">
-      <input id="enchiladas" type="checkbox" value="enchiladas" name="favmex">Enchiladas
-    </label>
-    <label for="quesadilla">
-      <input id="quesadilla" type="checkbox" value="quesadilla" name="favmex">Quesadillas
-    </label><br>
-    <input id="fav-enchiladas" type="text" placeholder="Favorite type of enchiladas?">
-    <button type="submit">Submit (actually does nothing)</button>
-  </form><br>
- 
+    <h1>Hello world!!</h1>
+    <p>This little site may not look like much, but it'll soon be spilling over with guacamole love.</p>
+    <h2>Made in Cambodia with ❤ from all of us at <a href=https://www.jaredratcliff.com target="_blank">jaredratcliff.com</a></h2><br>
+    <ol>
+      <li>avocado</li>
+      <li>salt</li>
+      <li>maybe some tomato</li>
+      <li>lemon juice</li>
+    </ol>
+    <p>That's what you should put in guacamole if you want to make some. How do you eat it?</p>
+    <ul>
+      <li>fresh</li>
+      <li>on haystacks</li>
+      <li>fresh</li>
+      <li>with enchiladas</li>
+      <li>or fresh</li>
+      <li>or with tortilla chips</li>
+      <li>or maybe even fresh</li>
+    </ul>
+    <p>Please contribute your <em>extremely important</em> thoughts and feelings by filling out the form below. But first, have a look at this picture.</p>
+    <a href="#"><img src="https://images.photowall.com/products/51310/seattle-skyline-black.jpg?h=699&q=85" alt="Seattle skyline"></a>
+    <!--the form begins here-->
+    <form>
+      <p>How do you like your guacamole?</p>
+      <label for="fresh">
+        <input id="fresh" type="radio" value="fresh" name="fresh-or-not" checked>Fresh
+      </label>
+      <label for="not-fresh">
+        <input id="not-fresh" type="radio" value="in enchiladas" name="fresh-or-not">In enchiladas
+      </label><br>
+      <p>What's your favorite types of Mexican food?</p>
+      <label for="burritos">
+        <input id="burritos" type="checkbox" value="burritos" name="favmex">Burritos
+      </label>
+      <label for="enchiladas">
+        <input id="enchiladas" type="checkbox" value="enchiladas" name="favmex">Enchiladas
+      </label>
+      <label for="quesadilla">
+        <input id="quesadilla" type="checkbox" value="quesadilla" name="favmex">Quesadillas
+      </label><br>
+      <input id="fav-enchiladas" type="text" placeholder="Favorite type of enchiladas?">
+      <button type="submit">Submit (actually does nothing)</button>
+    </form><br>
 
-</body>
+
+  </body>
 </html>
