@@ -11,7 +11,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab&display=swap" rel="stylesheet">
   
   <style>
-    /*The following code defines the values of variable colors throughout the page.*/
+    /*SECTION ONE : The following code defines the values of variable colors throughout the page.*/
     :root {
       --primary-color: purple;
       --primary-contrast-color: white; /*this should be a neutral color that contrasts with the "--primary-color". If the primary color is dark, this should be white; if the primary color is light, this should be black.*/
@@ -24,7 +24,24 @@
     } /*To include these colors in other CSS, instead of a color name or hex code, write "var(--primary-color)", without quotes. Include the name of the variable color you want. Example: "color: var(--primary-color);" */
     /*For a listing of all recognized CSS colors, visit this link: https://www.w3schools.com/cssref/css_colors.asp // For an explanation of variable colors, go here: https://www.geeksforgeeks.org/how-to-define-colors-as-variables-in-css/ */
     
-    /*The rest of the style code is general CSS that styles the page.*/
+    /*SECTION TWO : This code defines class and id styles throughout the document.*/
+    .medium-black-border {
+      border-color: black;
+      border-width: 10px;
+      border-style: solid;
+      border-radius: 0px;
+    }
+    .page {
+      background-color: white;
+    }
+    .content {
+      background-color: var(--fourth-color);
+      padding: 50px;
+      margin: 30px;
+    }
+      
+    
+    /*SECTION THREE : The rest of the style code is general CSS that styles the page.*/
     
     p, ol, ul {
       font-family: Roboto, sans-serif;
@@ -49,6 +66,8 @@
     
 
   <body>
+    <div class="page">
+    <div class="content">
 
     <h1>Hello world!!</h1>
     <p>This little site may not look like much, but it'll soon be spilling over with guacamole love.</p>
@@ -70,7 +89,7 @@
       <li>or maybe even fresh</li>
     </ul>
     <p>Please contribute your <em>extremely important</em> thoughts and feelings by filling out the form below. But first, have a look at this picture.</p>
-    <a href="#"><img src="https://images.photowall.com/products/51310/seattle-skyline-black.jpg?h=699&q=85" alt="Seattle skyline"></a>
+    <a href="#"><img class="medium-black-border" src="https://images.photowall.com/products/51310/seattle-skyline-black.jpg?h=699&q=85" alt="Seattle skyline"></a>
     <!--the form begins here-->
     <form>
       <p>How do you like your guacamole?</p>
@@ -96,4 +115,6 @@
 
 
   </body>
+  </div>
+  </div>
 </html>
