@@ -66,6 +66,15 @@
       color: var(--primary-contrast-color);
       background: var(--primary-color);
     }
+    /*This next block sets a special font for all characters in the Khmer unicode block*/
+    @font-face {
+    font-family: Nokora;
+    src: url('https://fonts.googleapis.com/css2?family=Nokora&display=swap');
+    unicode-range: U+1780-17FF;
+    }
+    p, h1, h2, h3, h4, h5, h6 {
+	    font-family: Nokora, inherit;
+    }
   </style>
     
 
@@ -116,7 +125,8 @@
       <input id="fav-enchiladas" type="text" placeholder="Favorite type of enchiladas?">
       <button type="submit">Submit (actually does nothing)</button>
     </form><br>
-
+      <h2>ទំនុកតម្កើង ៩១</h2>
+      <p>1អ្នក​ណា​រស់​នៅ​ក្រោម​ការ​គ្រប់‌គ្រង របស់​ព្រះ​ដ៏​ខ្ពង់‌ខ្ពស់​បំផុត អ្នក​នោះ​នឹង​ជ្រក​នៅ​ក្រោម​ម្លប់​បារមី របស់​ព្រះ​ដ៏​មាន​ឫទ្ធា‌នុភាព​លើ​អ្វីៗ​ទាំង​អស់។</p>
 
   </body>
   </div>
