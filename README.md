@@ -1,2 +1,2 @@
 # guacamole
-This repository is for testing coding features and for fun.
+This repository is purely a playground. With... some guacamole.
